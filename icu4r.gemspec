@@ -6,6 +6,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.homepage    = ""
   s.summary     = %q{ICU bindings for ruby}
+  s.authors     = ""
 
   s.extensions    = "extconf.rb"
   s.require_paths = ["lib"]
