@@ -1,8 +1,8 @@
 require 'mkmf'
 $LDFLAGS = "-licuuc -licui18n -licudata -lstdc++ "
 $CFLAGS = "-Wall"
-if !have_library('icui18n', 'u_init_3_8') && !have_library('icui18n', 'u_init_3_6') && !have_library('icui18n', 'u_init_3_4')
-  puts "ICU v3.4 required -- not found."
+if !have_header('unicode/uclean.h')
+  puts "ICU required -- not found."
   exit 1
 end
 create_makefile('icu4r')
